@@ -32,3 +32,17 @@ else {
 }
 
 print(areaConst)
+
+// exercício
+var respostaDeTudo = 42
+let idade = 29
+const pi = 3.14
+
+{
+    var respostaDeTudo = 3.14
+    let idade = 42
+    const pi = 29
+    console.log('Resposta Exercício no bloco:', respostaDeTudo, idade, pi)
+
+}
+console.log('Resposta Exercício:', respostaDeTudo, idade, pi)
