@@ -8,3 +8,4 @@ const concatenacaoTemplateString = `Meu nome é ${nome}, minha idade é ${idade}
 
 console.log(concatenacaoNormal)
 console.log(concatenacaoNormal)
+
