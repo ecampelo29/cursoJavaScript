@@ -2,30 +2,22 @@ import { Cliente } from "./Cliente.js"
 import { ContaCorrente } from "./ContaCorrente.js"
 
 
-const cliente1 = new Cliente()
-cliente1.nome = "Ricardo"
-cliente1.cpf = 112313213
+const cliente1 = new Cliente("Ricardo", 112313213)
+const cliente2 = new Cliente("Alice", 113232213)
 
-const cliente2 = new Cliente()
-cliente2.nome = "Alice"
-cliente2.cpf = 113232213
+const contaRicardo = new ContaCorrente(10014, cliente1)
+const contaAlice = new ContaCorrente(100334, cliente2)
 
-
-const contaRicardo = new ContaCorrente()
-contaRicardo.agencia = 10014
-contaRicardo.cliente = cliente1
-
-const contaAlice = new ContaCorrente()
-contaAlice.agencia = 100334
-contaAlice.cliente = cliente2
 
 contaRicardo.depositar(100)
 contaRicardo.sacar(20)
 contaRicardo.transferir(50, contaAlice)
 
-console.log(contaRicardo)
-console.log(contaAlice)
+//console.log(contaRicardo)
+//console.log(ContaCorrente.nrDeContas)
 
+contaAlice.cliente = contaAlice
+console.log(contaAlice)
 
 /*
 para criar um pacote json:
