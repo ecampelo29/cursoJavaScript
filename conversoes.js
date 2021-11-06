@@ -15,3 +15,5 @@ console.log('Usando + o javascript irá concatenar os valores: ', numero + numer
 console.log('Usando + conversão explícita com Number somamos os valores: ', numero + Number(numeroString))
 
 console.log('Usando + conversão explícita com String concatenamos os valores: ', String(numero) + numeroString)
+
+//dddd
